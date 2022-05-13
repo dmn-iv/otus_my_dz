@@ -6,7 +6,7 @@
 4. На ubuntu-srv2 развернул прометеус с алертменеджером 
  ![изображение](https://user-images.githubusercontent.com/53178698/168394729-7cb2289d-4753-4304-ba11-a4505378ea29.png)
 
-5. а так же телеграмм бота для отправки алертов в телегу 
+5. а так же телеграмм бота для отправки алертов в телегу https://github.com/dmn-iv/otus_my_dz/blob/main/%D0%94%D0%97-1/GAP-1/%D1%82%D0%B5%D0%BB%D0%B5%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B1%D0%BE%D1%82_%D0%B0%D0%BB%D0%B5%D1%80%D1%82.JPG?raw=true
 
 
 P.S.
