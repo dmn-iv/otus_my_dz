@@ -1,4 +1,4 @@
-Выполненные действия в ДЗ по уроку Prometheus, Alertmanager - работа с метриками (PromQL), написание алертов и их ротация.
+**Выполненные действия в ДЗ по уроку Prometheus, Alertmanager - работа с метриками (PromQL), написание алертов и их ротация.**
 1. Развернул 2 хоста : ubuntu-srv (192.168.0.105) и ubuntu-srv2 ((192.168.0.109).
 2. На ubuntu-srv развернул django на порту 8080, nginx, php7.2-fpm.service, postgresql.
  ![изображение](https://user-images.githubusercontent.com/53178698/168393669-441a6c6c-70e8-4a3e-ba21-f1b4fa949532.png)
