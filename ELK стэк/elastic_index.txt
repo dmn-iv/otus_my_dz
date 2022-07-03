@@ -1,0 +1,1450 @@
+root@ubuntu-srv3:/var/log/kibana# curl -XGET 'http://localhost:9200/_all/_search?q=*&pretty'
+{
+  "took" : 42,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 1,
+    "successful" : 1,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : {
+      "value" : 10000,
+      "relation" : "gte"
+    },
+    "max_score" : 1.0,
+    "hits" : [
+      {
+        "_index" : ".ds-logs-generic-default-2022.06.29-000001",
+        "_id" : "8Zo0s4EB3yshHdeex_53",
+        "_score" : 1.0,
+        "_source" : {
+          "type" : "rsyslog",
+          "procid" : "-",
+          "programname" : "sshd",
+          "severity" : "info",
+          "sysloghost" : "ubuntu-srv3",
+          "@version" : "1",
+          "host" : {
+            "ip" : "127.0.0.1"
+          },
+          "facility" : "local6",
+          "event" : {
+            "original" : "{\"@timestamp\":\"2022-06-30T01:37:24+03:00\",\"@version\":\"1\",\"message\":\" Jun 29 00:14:19 ubuntu-srv3 sudo:     root : TTY=pts\\/1 ; PWD=\\/etc\\/rsyslog.d ; USER=root ; COMMAND=\\/usr\\/sbin\\/rsyslogd -N1\",\"sysloghost\":\"ubuntu-srv3\",\"severity\":\"info\",\"facility\":\"local6\",\"programname\":\"sshd\",\"procid\":\"-\"}\n"
+          },
+          "message" : " Jun 29 00:14:19 ubuntu-srv3 sudo:     root : TTY=pts/1 ; PWD=/etc/rsyslog.d ; USER=root ; COMMAND=/usr/sbin/rsyslogd -N1",
+          "@timestamp" : "2022-06-29T22:37:24Z",
+          "data_stream" : {
+            "type" : "logs",
+            "dataset" : "generic",
+            "namespace" : "default"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-logs-generic-default-2022.06.29-000001",
+        "_id" : "gZo0s4EB3yshHdeex_53",
+        "_score" : 1.0,
+        "_source" : {
+          "type" : "rsyslog",
+          "procid" : "-",
+          "programname" : "sshd",
+          "severity" : "info",
+          "sysloghost" : "ubuntu-srv3",
+          "@version" : "1",
+          "host" : {
+            "ip" : "127.0.0.1"
+          },
+          "facility" : "local6",
+          "event" : {
+            "original" : "{\"@timestamp\":\"2022-06-30T01:37:24+03:00\",\"@version\":\"1\",\"message\":\" Jun 29 00:14:19 ubuntu-srv3 sudo:     root : TTY=pts\\/1 ; PWD=\\/etc\\/rsyslog.d ; USER=root ; COMMAND=\\/usr\\/sbin\\/rsyslogd -N1\",\"sysloghost\":\"ubuntu-srv3\",\"severity\":\"info\",\"facility\":\"local6\",\"programname\":\"sshd\",\"procid\":\"-\"}\n"
+          },
+          "message" : " Jun 29 00:14:19 ubuntu-srv3 sudo:     root : TTY=pts/1 ; PWD=/etc/rsyslog.d ; USER=root ; COMMAND=/usr/sbin/rsyslogd -N1",
+          "@timestamp" : "2022-06-29T22:37:24Z",
+          "data_stream" : {
+            "type" : "logs",
+            "dataset" : "generic",
+            "namespace" : "default"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-logs-generic-default-2022.06.29-000001",
+        "_id" : "iJo0s4EB3yshHdeex_53",
+        "_score" : 1.0,
+        "_source" : {
+          "type" : "rsyslog",
+          "procid" : "-",
+          "programname" : "sshd",
+          "severity" : "info",
+          "sysloghost" : "ubuntu-srv3",
+          "@version" : "1",
+          "host" : {
+            "ip" : "127.0.0.1"
+          },
+          "facility" : "local6",
+          "event" : {
+            "original" : "{\"@timestamp\":\"2022-06-30T01:37:24+03:00\",\"@version\":\"1\",\"message\":\" Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session closed for user root\",\"sysloghost\":\"ubuntu-srv3\",\"severity\":\"info\",\"facility\":\"local6\",\"programname\":\"sshd\",\"procid\":\"-\"}\n"
+          },
+          "message" : " Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session closed for user root",
+          "@timestamp" : "2022-06-29T22:37:24Z",
+          "data_stream" : {
+            "type" : "logs",
+            "dataset" : "generic",
+            "namespace" : "default"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-logs-generic-default-2022.06.29-000001",
+        "_id" : "iZo0s4EB3yshHdeex_53",
+        "_score" : 1.0,
+        "_source" : {
+          "type" : "rsyslog",
+          "procid" : "-",
+          "programname" : "sshd",
+          "severity" : "info",
+          "sysloghost" : "ubuntu-srv3",
+          "@version" : "1",
+          "host" : {
+            "ip" : "127.0.0.1"
+          },
+          "facility" : "local6",
+          "event" : {
+            "original" : "{\"@timestamp\":\"2022-06-30T01:37:24+03:00\",\"@version\":\"1\",\"message\":\" Jun 29 00:14:07 ubuntu-srv3 sudo: pam_unix(sudo:session): session closed for user root\",\"sysloghost\":\"ubuntu-srv3\",\"severity\":\"info\",\"facility\":\"local6\",\"programname\":\"sshd\",\"procid\":\"-\"}\n"
+          },
+          "message" : " Jun 29 00:14:07 ubuntu-srv3 sudo: pam_unix(sudo:session): session closed for user root",
+          "@timestamp" : "2022-06-29T22:37:24Z",
+          "data_stream" : {
+            "type" : "logs",
+            "dataset" : "generic",
+            "namespace" : "default"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-logs-generic-default-2022.06.29-000001",
+        "_id" : "qJo0s4EB3yshHdeex_1q",
+        "_score" : 1.0,
+        "_source" : {
+          "type" : "rsyslog",
+          "procid" : "-",
+          "programname" : "sshd",
+          "severity" : "info",
+          "sysloghost" : "ubuntu-srv3",
+          "@version" : "1",
+          "host" : {
+            "ip" : "127.0.0.1"
+          },
+          "facility" : "local6",
+          "event" : {
+            "original" : "{\"@timestamp\":\"2022-06-30T01:37:24+03:00\",\"@version\":\"1\",\"message\":\" Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)\",\"sysloghost\":\"ubuntu-srv3\",\"severity\":\"info\",\"facility\":\"local6\",\"programname\":\"sshd\",\"procid\":\"-\"}\n"
+          },
+          "message" : " Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)",
+          "@timestamp" : "2022-06-29T22:37:24Z",
+          "data_stream" : {
+            "type" : "logs",
+            "dataset" : "generic",
+            "namespace" : "default"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-logs-generic-default-2022.06.29-000001",
+        "_id" : "G5o0s4EB3yshHdeex_51",
+        "_score" : 1.0,
+        "_source" : {
+          "type" : "rsyslog",
+          "procid" : "-",
+          "programname" : "sshd",
+          "severity" : "info",
+          "sysloghost" : "ubuntu-srv3",
+          "@version" : "1",
+          "host" : {
+            "ip" : "127.0.0.1"
+          },
+          "facility" : "local6",
+          "event" : {
+            "original" : "{\"@timestamp\":\"2022-06-30T01:37:24+03:00\",\"@version\":\"1\",\"message\":\" Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)\",\"sysloghost\":\"ubuntu-srv3\",\"severity\":\"info\",\"facility\":\"local6\",\"programname\":\"sshd\",\"procid\":\"-\"}\n"
+          },
+          "message" : " Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)",
+          "@timestamp" : "2022-06-29T22:37:24Z",
+          "data_stream" : {
+            "type" : "logs",
+            "dataset" : "generic",
+            "namespace" : "default"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-logs-generic-default-2022.06.29-000001",
+        "_id" : "2Jo0s4EB3yshHdeex_1q",
+        "_score" : 1.0,
+        "_source" : {
+          "type" : "rsyslog",
+          "procid" : "-",
+          "programname" : "sshd",
+          "severity" : "info",
+          "sysloghost" : "ubuntu-srv3",
+          "@version" : "1",
+          "host" : {
+            "ip" : "127.0.0.1"
+          },
+          "facility" : "local6",
+          "event" : {
+            "original" : "{\"@timestamp\":\"2022-06-30T01:37:24+03:00\",\"@version\":\"1\",\"message\":\" Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session closed for user root\",\"sysloghost\":\"ubuntu-srv3\",\"severity\":\"info\",\"facility\":\"local6\",\"programname\":\"sshd\",\"procid\":\"-\"}\n"
+          },
+          "message" : " Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session closed for user root",
+          "@timestamp" : "2022-06-29T22:37:24Z",
+          "data_stream" : {
+            "type" : "logs",
+            "dataset" : "generic",
+            "namespace" : "default"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-logs-generic-default-2022.06.29-000001",
+        "_id" : "6Jo0s4EB3yshHdeex_1q",
+        "_score" : 1.0,
+        "_source" : {
+          "type" : "rsyslog",
+          "procid" : "-",
+          "programname" : "sshd",
+          "severity" : "info",
+          "sysloghost" : "ubuntu-srv3",
+          "@version" : "1",
+          "host" : {
+            "ip" : "127.0.0.1"
+          },
+          "facility" : "local6",
+          "event" : {
+            "original" : "{\"@timestamp\":\"2022-06-30T01:37:24+03:00\",\"@version\":\"1\",\"message\":\" Jun 29 00:14:19 ubuntu-srv3 sudo:     root : TTY=pts\\/1 ; PWD=\\/etc\\/rsyslog.d ; USER=root ; COMMAND=\\/usr\\/sbin\\/rsyslogd -N1\",\"sysloghost\":\"ubuntu-srv3\",\"severity\":\"info\",\"facility\":\"local6\",\"programname\":\"sshd\",\"procid\":\"-\"}\n"
+          },
+          "message" : " Jun 29 00:14:19 ubuntu-srv3 sudo:     root : TTY=pts/1 ; PWD=/etc/rsyslog.d ; USER=root ; COMMAND=/usr/sbin/rsyslogd -N1",
+          "@timestamp" : "2022-06-29T22:37:24Z",
+          "data_stream" : {
+            "type" : "logs",
+            "dataset" : "generic",
+            "namespace" : "default"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-logs-generic-default-2022.06.29-000001",
+        "_id" : "6po0s4EB3yshHdeex_1q",
+        "_score" : 1.0,
+        "_source" : {
+          "type" : "rsyslog",
+          "procid" : "-",
+          "programname" : "sshd",
+          "severity" : "info",
+          "sysloghost" : "ubuntu-srv3",
+          "@version" : "1",
+          "host" : {
+            "ip" : "127.0.0.1"
+          },
+          "facility" : "local6",
+          "event" : {
+            "original" : "{\"@timestamp\":\"2022-06-30T01:37:24+03:00\",\"@version\":\"1\",\"message\":\" Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)\",\"sysloghost\":\"ubuntu-srv3\",\"severity\":\"info\",\"facility\":\"local6\",\"programname\":\"sshd\",\"procid\":\"-\"}\n"
+          },
+          "message" : " Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)",
+          "@timestamp" : "2022-06-29T22:37:24Z",
+          "data_stream" : {
+            "type" : "logs",
+            "dataset" : "generic",
+            "namespace" : "default"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-logs-generic-default-2022.06.29-000001",
+        "_id" : "Q5o0s4EB3yshHdeex_51",
+        "_score" : 1.0,
+        "_source" : {
+          "type" : "rsyslog",
+          "procid" : "-",
+          "programname" : "sshd",
+          "severity" : "info",
+          "sysloghost" : "ubuntu-srv3",
+          "@version" : "1",
+          "host" : {
+            "ip" : "127.0.0.1"
+          },
+          "facility" : "local6",
+          "event" : {
+            "original" : "{\"@timestamp\":\"2022-06-30T01:37:24+03:00\",\"@version\":\"1\",\"message\":\" Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session closed for user root\",\"sysloghost\":\"ubuntu-srv3\",\"severity\":\"info\",\"facility\":\"local6\",\"programname\":\"sshd\",\"procid\":\"-\"}\n"
+          },
+          "message" : " Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session closed for user root",
+          "@timestamp" : "2022-06-29T22:37:24Z",
+          "data_stream" : {
+            "type" : "logs",
+            "dataset" : "generic",
+            "namespace" : "default"
+          }
+        }
+      }
+    ]
+  }
+}
+root@ubuntu-srv3:/var/log/kibana# curl -XGET 'http://localhost:9200/_all/_search?q=*&pretty'
+{
+  "took" : 3,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 1,
+    "successful" : 1,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : {
+      "value" : 10000,
+      "relation" : "gte"
+    },
+    "max_score" : 1.0,
+    "hits" : [
+      {
+        "_index" : ".ds-logs-generic-default-2022.06.29-000001",
+        "_id" : "8Zo0s4EB3yshHdeex_53",
+        "_score" : 1.0,
+        "_source" : {
+          "type" : "rsyslog",
+          "procid" : "-",
+          "programname" : "sshd",
+          "severity" : "info",
+          "sysloghost" : "ubuntu-srv3",
+          "@version" : "1",
+          "host" : {
+            "ip" : "127.0.0.1"
+          },
+          "facility" : "local6",
+          "event" : {
+            "original" : "{\"@timestamp\":\"2022-06-30T01:37:24+03:00\",\"@version\":\"1\",\"message\":\" Jun 29 00:14:19 ubuntu-srv3 sudo:     root : TTY=pts\\/1 ; PWD=\\/etc\\/rsyslog.d ; USER=root ; COMMAND=\\/usr\\/sbin\\/rsyslogd -N1\",\"sysloghost\":\"ubuntu-srv3\",\"severity\":\"info\",\"facility\":\"local6\",\"programname\":\"sshd\",\"procid\":\"-\"}\n"
+          },
+          "message" : " Jun 29 00:14:19 ubuntu-srv3 sudo:     root : TTY=pts/1 ; PWD=/etc/rsyslog.d ; USER=root ; COMMAND=/usr/sbin/rsyslogd -N1",
+          "@timestamp" : "2022-06-29T22:37:24Z",
+          "data_stream" : {
+            "type" : "logs",
+            "dataset" : "generic",
+            "namespace" : "default"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-logs-generic-default-2022.06.29-000001",
+        "_id" : "gZo0s4EB3yshHdeex_53",
+        "_score" : 1.0,
+        "_source" : {
+          "type" : "rsyslog",
+          "procid" : "-",
+          "programname" : "sshd",
+          "severity" : "info",
+          "sysloghost" : "ubuntu-srv3",
+          "@version" : "1",
+          "host" : {
+            "ip" : "127.0.0.1"
+          },
+          "facility" : "local6",
+          "event" : {
+            "original" : "{\"@timestamp\":\"2022-06-30T01:37:24+03:00\",\"@version\":\"1\",\"message\":\" Jun 29 00:14:19 ubuntu-srv3 sudo:     root : TTY=pts\\/1 ; PWD=\\/etc\\/rsyslog.d ; USER=root ; COMMAND=\\/usr\\/sbin\\/rsyslogd -N1\",\"sysloghost\":\"ubuntu-srv3\",\"severity\":\"info\",\"facility\":\"local6\",\"programname\":\"sshd\",\"procid\":\"-\"}\n"
+          },
+          "message" : " Jun 29 00:14:19 ubuntu-srv3 sudo:     root : TTY=pts/1 ; PWD=/etc/rsyslog.d ; USER=root ; COMMAND=/usr/sbin/rsyslogd -N1",
+          "@timestamp" : "2022-06-29T22:37:24Z",
+          "data_stream" : {
+            "type" : "logs",
+            "dataset" : "generic",
+            "namespace" : "default"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-logs-generic-default-2022.06.29-000001",
+        "_id" : "iJo0s4EB3yshHdeex_53",
+        "_score" : 1.0,
+        "_source" : {
+          "type" : "rsyslog",
+          "procid" : "-",
+          "programname" : "sshd",
+          "severity" : "info",
+          "sysloghost" : "ubuntu-srv3",
+          "@version" : "1",
+          "host" : {
+            "ip" : "127.0.0.1"
+          },
+          "facility" : "local6",
+          "event" : {
+            "original" : "{\"@timestamp\":\"2022-06-30T01:37:24+03:00\",\"@version\":\"1\",\"message\":\" Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session closed for user root\",\"sysloghost\":\"ubuntu-srv3\",\"severity\":\"info\",\"facility\":\"local6\",\"programname\":\"sshd\",\"procid\":\"-\"}\n"
+          },
+          "message" : " Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session closed for user root",
+          "@timestamp" : "2022-06-29T22:37:24Z",
+          "data_stream" : {
+            "type" : "logs",
+            "dataset" : "generic",
+            "namespace" : "default"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-logs-generic-default-2022.06.29-000001",
+        "_id" : "iZo0s4EB3yshHdeex_53",
+        "_score" : 1.0,
+        "_source" : {
+          "type" : "rsyslog",
+          "procid" : "-",
+          "programname" : "sshd",
+          "severity" : "info",
+          "sysloghost" : "ubuntu-srv3",
+          "@version" : "1",
+          "host" : {
+            "ip" : "127.0.0.1"
+          },
+          "facility" : "local6",
+          "event" : {
+            "original" : "{\"@timestamp\":\"2022-06-30T01:37:24+03:00\",\"@version\":\"1\",\"message\":\" Jun 29 00:14:07 ubuntu-srv3 sudo: pam_unix(sudo:session): session closed for user root\",\"sysloghost\":\"ubuntu-srv3\",\"severity\":\"info\",\"facility\":\"local6\",\"programname\":\"sshd\",\"procid\":\"-\"}\n"
+          },
+          "message" : " Jun 29 00:14:07 ubuntu-srv3 sudo: pam_unix(sudo:session): session closed for user root",
+          "@timestamp" : "2022-06-29T22:37:24Z",
+          "data_stream" : {
+            "type" : "logs",
+            "dataset" : "generic",
+            "namespace" : "default"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-logs-generic-default-2022.06.29-000001",
+        "_id" : "qJo0s4EB3yshHdeex_1q",
+        "_score" : 1.0,
+        "_source" : {
+          "type" : "rsyslog",
+          "procid" : "-",
+          "programname" : "sshd",
+          "severity" : "info",
+          "sysloghost" : "ubuntu-srv3",
+          "@version" : "1",
+          "host" : {
+            "ip" : "127.0.0.1"
+          },
+          "facility" : "local6",
+          "event" : {
+            "original" : "{\"@timestamp\":\"2022-06-30T01:37:24+03:00\",\"@version\":\"1\",\"message\":\" Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)\",\"sysloghost\":\"ubuntu-srv3\",\"severity\":\"info\",\"facility\":\"local6\",\"programname\":\"sshd\",\"procid\":\"-\"}\n"
+          },
+          "message" : " Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)",
+          "@timestamp" : "2022-06-29T22:37:24Z",
+          "data_stream" : {
+            "type" : "logs",
+            "dataset" : "generic",
+            "namespace" : "default"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-logs-generic-default-2022.06.29-000001",
+        "_id" : "G5o0s4EB3yshHdeex_51",
+        "_score" : 1.0,
+        "_source" : {
+          "type" : "rsyslog",
+          "procid" : "-",
+          "programname" : "sshd",
+          "severity" : "info",
+          "sysloghost" : "ubuntu-srv3",
+          "@version" : "1",
+          "host" : {
+            "ip" : "127.0.0.1"
+          },
+          "facility" : "local6",
+          "event" : {
+            "original" : "{\"@timestamp\":\"2022-06-30T01:37:24+03:00\",\"@version\":\"1\",\"message\":\" Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)\",\"sysloghost\":\"ubuntu-srv3\",\"severity\":\"info\",\"facility\":\"local6\",\"programname\":\"sshd\",\"procid\":\"-\"}\n"
+          },
+          "message" : " Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)",
+          "@timestamp" : "2022-06-29T22:37:24Z",
+          "data_stream" : {
+            "type" : "logs",
+            "dataset" : "generic",
+            "namespace" : "default"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-logs-generic-default-2022.06.29-000001",
+        "_id" : "2Jo0s4EB3yshHdeex_1q",
+        "_score" : 1.0,
+        "_source" : {
+          "type" : "rsyslog",
+          "procid" : "-",
+          "programname" : "sshd",
+          "severity" : "info",
+          "sysloghost" : "ubuntu-srv3",
+          "@version" : "1",
+          "host" : {
+            "ip" : "127.0.0.1"
+          },
+          "facility" : "local6",
+          "event" : {
+            "original" : "{\"@timestamp\":\"2022-06-30T01:37:24+03:00\",\"@version\":\"1\",\"message\":\" Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session closed for user root\",\"sysloghost\":\"ubuntu-srv3\",\"severity\":\"info\",\"facility\":\"local6\",\"programname\":\"sshd\",\"procid\":\"-\"}\n"
+          },
+          "message" : " Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session closed for user root",
+          "@timestamp" : "2022-06-29T22:37:24Z",
+          "data_stream" : {
+            "type" : "logs",
+            "dataset" : "generic",
+            "namespace" : "default"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-logs-generic-default-2022.06.29-000001",
+        "_id" : "6Jo0s4EB3yshHdeex_1q",
+        "_score" : 1.0,
+        "_source" : {
+          "type" : "rsyslog",
+          "procid" : "-",
+          "programname" : "sshd",
+          "severity" : "info",
+          "sysloghost" : "ubuntu-srv3",
+          "@version" : "1",
+          "host" : {
+            "ip" : "127.0.0.1"
+          },
+          "facility" : "local6",
+          "event" : {
+            "original" : "{\"@timestamp\":\"2022-06-30T01:37:24+03:00\",\"@version\":\"1\",\"message\":\" Jun 29 00:14:19 ubuntu-srv3 sudo:     root : TTY=pts\\/1 ; PWD=\\/etc\\/rsyslog.d ; USER=root ; COMMAND=\\/usr\\/sbin\\/rsyslogd -N1\",\"sysloghost\":\"ubuntu-srv3\",\"severity\":\"info\",\"facility\":\"local6\",\"programname\":\"sshd\",\"procid\":\"-\"}\n"
+          },
+          "message" : " Jun 29 00:14:19 ubuntu-srv3 sudo:     root : TTY=pts/1 ; PWD=/etc/rsyslog.d ; USER=root ; COMMAND=/usr/sbin/rsyslogd -N1",
+          "@timestamp" : "2022-06-29T22:37:24Z",
+          "data_stream" : {
+            "type" : "logs",
+            "dataset" : "generic",
+            "namespace" : "default"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-logs-generic-default-2022.06.29-000001",
+        "_id" : "6po0s4EB3yshHdeex_1q",
+        "_score" : 1.0,
+        "_source" : {
+          "type" : "rsyslog",
+          "procid" : "-",
+          "programname" : "sshd",
+          "severity" : "info",
+          "sysloghost" : "ubuntu-srv3",
+          "@version" : "1",
+          "host" : {
+            "ip" : "127.0.0.1"
+          },
+          "facility" : "local6",
+          "event" : {
+            "original" : "{\"@timestamp\":\"2022-06-30T01:37:24+03:00\",\"@version\":\"1\",\"message\":\" Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)\",\"sysloghost\":\"ubuntu-srv3\",\"severity\":\"info\",\"facility\":\"local6\",\"programname\":\"sshd\",\"procid\":\"-\"}\n"
+          },
+          "message" : " Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)",
+          "@timestamp" : "2022-06-29T22:37:24Z",
+          "data_stream" : {
+            "type" : "logs",
+            "dataset" : "generic",
+            "namespace" : "default"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-logs-generic-default-2022.06.29-000001",
+        "_id" : "Q5o0s4EB3yshHdeex_51",
+        "_score" : 1.0,
+        "_source" : {
+          "type" : "rsyslog",
+          "procid" : "-",
+          "programname" : "sshd",
+          "severity" : "info",
+          "sysloghost" : "ubuntu-srv3",
+          "@version" : "1",
+          "host" : {
+            "ip" : "127.0.0.1"
+          },
+          "facility" : "local6",
+          "event" : {
+            "original" : "{\"@timestamp\":\"2022-06-30T01:37:24+03:00\",\"@version\":\"1\",\"message\":\" Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session closed for user root\",\"sysloghost\":\"ubuntu-srv3\",\"severity\":\"info\",\"facility\":\"local6\",\"programname\":\"sshd\",\"procid\":\"-\"}\n"
+          },
+          "message" : " Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session closed for user root",
+          "@timestamp" : "2022-06-29T22:37:24Z",
+          "data_stream" : {
+            "type" : "logs",
+            "dataset" : "generic",
+            "namespace" : "default"
+          }
+        }
+      }
+    ]
+  }
+}
+root@ubuntu-srv3:/var/log/kibana# curl -XGET 'http://localhost:9200/_all/_search?q=*&pretty'
+{
+  "took" : 3,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 1,
+    "successful" : 1,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : {
+      "value" : 10000,
+      "relation" : "gte"
+    },
+    "max_score" : 1.0,
+    "hits" : [
+      {
+        "_index" : ".ds-logs-generic-default-2022.06.29-000001",
+        "_id" : "8Zo0s4EB3yshHdeex_53",
+        "_score" : 1.0,
+        "_source" : {
+          "type" : "rsyslog",
+          "procid" : "-",
+          "programname" : "sshd",
+          "severity" : "info",
+          "sysloghost" : "ubuntu-srv3",
+          "@version" : "1",
+          "host" : {
+            "ip" : "127.0.0.1"
+          },
+          "facility" : "local6",
+          "event" : {
+            "original" : "{\"@timestamp\":\"2022-06-30T01:37:24+03:00\",\"@version\":\"1\",\"message\":\" Jun 29 00:14:19 ubuntu-srv3 sudo:     root : TTY=pts\\/1 ; PWD=\\/etc\\/rsyslog.d ; USER=root ; COMMAND=\\/usr\\/sbin\\/rsyslogd -N1\",\"sysloghost\":\"ubuntu-srv3\",\"severity\":\"info\",\"facility\":\"local6\",\"programname\":\"sshd\",\"procid\":\"-\"}\n"
+          },
+          "message" : " Jun 29 00:14:19 ubuntu-srv3 sudo:     root : TTY=pts/1 ; PWD=/etc/rsyslog.d ; USER=root ; COMMAND=/usr/sbin/rsyslogd -N1",
+          "@timestamp" : "2022-06-29T22:37:24Z",
+          "data_stream" : {
+            "type" : "logs",
+            "dataset" : "generic",
+            "namespace" : "default"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-logs-generic-default-2022.06.29-000001",
+        "_id" : "gZo0s4EB3yshHdeex_53",
+        "_score" : 1.0,
+        "_source" : {
+          "type" : "rsyslog",
+          "procid" : "-",
+          "programname" : "sshd",
+          "severity" : "info",
+          "sysloghost" : "ubuntu-srv3",
+          "@version" : "1",
+          "host" : {
+            "ip" : "127.0.0.1"
+          },
+          "facility" : "local6",
+          "event" : {
+            "original" : "{\"@timestamp\":\"2022-06-30T01:37:24+03:00\",\"@version\":\"1\",\"message\":\" Jun 29 00:14:19 ubuntu-srv3 sudo:     root : TTY=pts\\/1 ; PWD=\\/etc\\/rsyslog.d ; USER=root ; COMMAND=\\/usr\\/sbin\\/rsyslogd -N1\",\"sysloghost\":\"ubuntu-srv3\",\"severity\":\"info\",\"facility\":\"local6\",\"programname\":\"sshd\",\"procid\":\"-\"}\n"
+          },
+          "message" : " Jun 29 00:14:19 ubuntu-srv3 sudo:     root : TTY=pts/1 ; PWD=/etc/rsyslog.d ; USER=root ; COMMAND=/usr/sbin/rsyslogd -N1",
+          "@timestamp" : "2022-06-29T22:37:24Z",
+          "data_stream" : {
+            "type" : "logs",
+            "dataset" : "generic",
+            "namespace" : "default"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-logs-generic-default-2022.06.29-000001",
+        "_id" : "iJo0s4EB3yshHdeex_53",
+        "_score" : 1.0,
+        "_source" : {
+          "type" : "rsyslog",
+          "procid" : "-",
+          "programname" : "sshd",
+          "severity" : "info",
+          "sysloghost" : "ubuntu-srv3",
+          "@version" : "1",
+          "host" : {
+            "ip" : "127.0.0.1"
+          },
+          "facility" : "local6",
+          "event" : {
+            "original" : "{\"@timestamp\":\"2022-06-30T01:37:24+03:00\",\"@version\":\"1\",\"message\":\" Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session closed for user root\",\"sysloghost\":\"ubuntu-srv3\",\"severity\":\"info\",\"facility\":\"local6\",\"programname\":\"sshd\",\"procid\":\"-\"}\n"
+          },
+          "message" : " Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session closed for user root",
+          "@timestamp" : "2022-06-29T22:37:24Z",
+          "data_stream" : {
+            "type" : "logs",
+            "dataset" : "generic",
+            "namespace" : "default"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-logs-generic-default-2022.06.29-000001",
+        "_id" : "iZo0s4EB3yshHdeex_53",
+        "_score" : 1.0,
+        "_source" : {
+          "type" : "rsyslog",
+          "procid" : "-",
+          "programname" : "sshd",
+          "severity" : "info",
+          "sysloghost" : "ubuntu-srv3",
+          "@version" : "1",
+          "host" : {
+            "ip" : "127.0.0.1"
+          },
+          "facility" : "local6",
+          "event" : {
+            "original" : "{\"@timestamp\":\"2022-06-30T01:37:24+03:00\",\"@version\":\"1\",\"message\":\" Jun 29 00:14:07 ubuntu-srv3 sudo: pam_unix(sudo:session): session closed for user root\",\"sysloghost\":\"ubuntu-srv3\",\"severity\":\"info\",\"facility\":\"local6\",\"programname\":\"sshd\",\"procid\":\"-\"}\n"
+          },
+          "message" : " Jun 29 00:14:07 ubuntu-srv3 sudo: pam_unix(sudo:session): session closed for user root",
+          "@timestamp" : "2022-06-29T22:37:24Z",
+          "data_stream" : {
+            "type" : "logs",
+            "dataset" : "generic",
+            "namespace" : "default"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-logs-generic-default-2022.06.29-000001",
+        "_id" : "qJo0s4EB3yshHdeex_1q",
+        "_score" : 1.0,
+        "_source" : {
+          "type" : "rsyslog",
+          "procid" : "-",
+          "programname" : "sshd",
+          "severity" : "info",
+          "sysloghost" : "ubuntu-srv3",
+          "@version" : "1",
+          "host" : {
+            "ip" : "127.0.0.1"
+          },
+          "facility" : "local6",
+          "event" : {
+            "original" : "{\"@timestamp\":\"2022-06-30T01:37:24+03:00\",\"@version\":\"1\",\"message\":\" Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)\",\"sysloghost\":\"ubuntu-srv3\",\"severity\":\"info\",\"facility\":\"local6\",\"programname\":\"sshd\",\"procid\":\"-\"}\n"
+          },
+          "message" : " Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)",
+          "@timestamp" : "2022-06-29T22:37:24Z",
+          "data_stream" : {
+            "type" : "logs",
+            "dataset" : "generic",
+            "namespace" : "default"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-logs-generic-default-2022.06.29-000001",
+        "_id" : "G5o0s4EB3yshHdeex_51",
+        "_score" : 1.0,
+        "_source" : {
+          "type" : "rsyslog",
+          "procid" : "-",
+          "programname" : "sshd",
+          "severity" : "info",
+          "sysloghost" : "ubuntu-srv3",
+          "@version" : "1",
+          "host" : {
+            "ip" : "127.0.0.1"
+          },
+          "facility" : "local6",
+          "event" : {
+            "original" : "{\"@timestamp\":\"2022-06-30T01:37:24+03:00\",\"@version\":\"1\",\"message\":\" Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)\",\"sysloghost\":\"ubuntu-srv3\",\"severity\":\"info\",\"facility\":\"local6\",\"programname\":\"sshd\",\"procid\":\"-\"}\n"
+          },
+          "message" : " Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)",
+          "@timestamp" : "2022-06-29T22:37:24Z",
+          "data_stream" : {
+            "type" : "logs",
+            "dataset" : "generic",
+            "namespace" : "default"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-logs-generic-default-2022.06.29-000001",
+        "_id" : "2Jo0s4EB3yshHdeex_1q",
+        "_score" : 1.0,
+        "_source" : {
+          "type" : "rsyslog",
+          "procid" : "-",
+          "programname" : "sshd",
+          "severity" : "info",
+          "sysloghost" : "ubuntu-srv3",
+          "@version" : "1",
+          "host" : {
+            "ip" : "127.0.0.1"
+          },
+          "facility" : "local6",
+          "event" : {
+            "original" : "{\"@timestamp\":\"2022-06-30T01:37:24+03:00\",\"@version\":\"1\",\"message\":\" Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session closed for user root\",\"sysloghost\":\"ubuntu-srv3\",\"severity\":\"info\",\"facility\":\"local6\",\"programname\":\"sshd\",\"procid\":\"-\"}\n"
+          },
+          "message" : " Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session closed for user root",
+          "@timestamp" : "2022-06-29T22:37:24Z",
+          "data_stream" : {
+            "type" : "logs",
+            "dataset" : "generic",
+            "namespace" : "default"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-logs-generic-default-2022.06.29-000001",
+        "_id" : "6Jo0s4EB3yshHdeex_1q",
+        "_score" : 1.0,
+        "_source" : {
+          "type" : "rsyslog",
+          "procid" : "-",
+          "programname" : "sshd",
+          "severity" : "info",
+          "sysloghost" : "ubuntu-srv3",
+          "@version" : "1",
+          "host" : {
+            "ip" : "127.0.0.1"
+          },
+          "facility" : "local6",
+          "event" : {
+            "original" : "{\"@timestamp\":\"2022-06-30T01:37:24+03:00\",\"@version\":\"1\",\"message\":\" Jun 29 00:14:19 ubuntu-srv3 sudo:     root : TTY=pts\\/1 ; PWD=\\/etc\\/rsyslog.d ; USER=root ; COMMAND=\\/usr\\/sbin\\/rsyslogd -N1\",\"sysloghost\":\"ubuntu-srv3\",\"severity\":\"info\",\"facility\":\"local6\",\"programname\":\"sshd\",\"procid\":\"-\"}\n"
+          },
+          "message" : " Jun 29 00:14:19 ubuntu-srv3 sudo:     root : TTY=pts/1 ; PWD=/etc/rsyslog.d ; USER=root ; COMMAND=/usr/sbin/rsyslogd -N1",
+          "@timestamp" : "2022-06-29T22:37:24Z",
+          "data_stream" : {
+            "type" : "logs",
+            "dataset" : "generic",
+            "namespace" : "default"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-logs-generic-default-2022.06.29-000001",
+        "_id" : "6po0s4EB3yshHdeex_1q",
+        "_score" : 1.0,
+        "_source" : {
+          "type" : "rsyslog",
+          "procid" : "-",
+          "programname" : "sshd",
+          "severity" : "info",
+          "sysloghost" : "ubuntu-srv3",
+          "@version" : "1",
+          "host" : {
+            "ip" : "127.0.0.1"
+          },
+          "facility" : "local6",
+          "event" : {
+            "original" : "{\"@timestamp\":\"2022-06-30T01:37:24+03:00\",\"@version\":\"1\",\"message\":\" Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)\",\"sysloghost\":\"ubuntu-srv3\",\"severity\":\"info\",\"facility\":\"local6\",\"programname\":\"sshd\",\"procid\":\"-\"}\n"
+          },
+          "message" : " Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)",
+          "@timestamp" : "2022-06-29T22:37:24Z",
+          "data_stream" : {
+            "type" : "logs",
+            "dataset" : "generic",
+            "namespace" : "default"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-logs-generic-default-2022.06.29-000001",
+        "_id" : "Q5o0s4EB3yshHdeex_51",
+        "_score" : 1.0,
+        "_source" : {
+          "type" : "rsyslog",
+          "procid" : "-",
+          "programname" : "sshd",
+          "severity" : "info",
+          "sysloghost" : "ubuntu-srv3",
+          "@version" : "1",
+          "host" : {
+            "ip" : "127.0.0.1"
+          },
+          "facility" : "local6",
+          "event" : {
+            "original" : "{\"@timestamp\":\"2022-06-30T01:37:24+03:00\",\"@version\":\"1\",\"message\":\" Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session closed for user root\",\"sysloghost\":\"ubuntu-srv3\",\"severity\":\"info\",\"facility\":\"local6\",\"programname\":\"sshd\",\"procid\":\"-\"}\n"
+          },
+          "message" : " Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session closed for user root",
+          "@timestamp" : "2022-06-29T22:37:24Z",
+          "data_stream" : {
+            "type" : "logs",
+            "dataset" : "generic",
+            "namespace" : "default"
+          }
+        }
+      }
+    ]
+  }
+}
+root@ubuntu-srv3:/var/log/kibana# curl -XGET 'http://localhost:9200/_all/_search?q=*&pretty'
+{
+  "took" : 3,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 1,
+    "successful" : 1,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : {
+      "value" : 10000,
+      "relation" : "gte"
+    },
+    "max_score" : 1.0,
+    "hits" : [
+      {
+        "_index" : ".ds-logs-generic-default-2022.06.29-000001",
+        "_id" : "8Zo0s4EB3yshHdeex_53",
+        "_score" : 1.0,
+        "_source" : {
+          "type" : "rsyslog",
+          "procid" : "-",
+          "programname" : "sshd",
+          "severity" : "info",
+          "sysloghost" : "ubuntu-srv3",
+          "@version" : "1",
+          "host" : {
+            "ip" : "127.0.0.1"
+          },
+          "facility" : "local6",
+          "event" : {
+            "original" : "{\"@timestamp\":\"2022-06-30T01:37:24+03:00\",\"@version\":\"1\",\"message\":\" Jun 29 00:14:19 ubuntu-srv3 sudo:     root : TTY=pts\\/1 ; PWD=\\/etc\\/rsyslog.d ; USER=root ; COMMAND=\\/usr\\/sbin\\/rsyslogd -N1\",\"sysloghost\":\"ubuntu-srv3\",\"severity\":\"info\",\"facility\":\"local6\",\"programname\":\"sshd\",\"procid\":\"-\"}\n"
+          },
+          "message" : " Jun 29 00:14:19 ubuntu-srv3 sudo:     root : TTY=pts/1 ; PWD=/etc/rsyslog.d ; USER=root ; COMMAND=/usr/sbin/rsyslogd -N1",
+          "@timestamp" : "2022-06-29T22:37:24Z",
+          "data_stream" : {
+            "type" : "logs",
+            "dataset" : "generic",
+            "namespace" : "default"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-logs-generic-default-2022.06.29-000001",
+        "_id" : "gZo0s4EB3yshHdeex_53",
+        "_score" : 1.0,
+        "_source" : {
+          "type" : "rsyslog",
+          "procid" : "-",
+          "programname" : "sshd",
+          "severity" : "info",
+          "sysloghost" : "ubuntu-srv3",
+          "@version" : "1",
+          "host" : {
+            "ip" : "127.0.0.1"
+          },
+          "facility" : "local6",
+          "event" : {
+            "original" : "{\"@timestamp\":\"2022-06-30T01:37:24+03:00\",\"@version\":\"1\",\"message\":\" Jun 29 00:14:19 ubuntu-srv3 sudo:     root : TTY=pts\\/1 ; PWD=\\/etc\\/rsyslog.d ; USER=root ; COMMAND=\\/usr\\/sbin\\/rsyslogd -N1\",\"sysloghost\":\"ubuntu-srv3\",\"severity\":\"info\",\"facility\":\"local6\",\"programname\":\"sshd\",\"procid\":\"-\"}\n"
+          },
+          "message" : " Jun 29 00:14:19 ubuntu-srv3 sudo:     root : TTY=pts/1 ; PWD=/etc/rsyslog.d ; USER=root ; COMMAND=/usr/sbin/rsyslogd -N1",
+          "@timestamp" : "2022-06-29T22:37:24Z",
+          "data_stream" : {
+            "type" : "logs",
+            "dataset" : "generic",
+            "namespace" : "default"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-logs-generic-default-2022.06.29-000001",
+        "_id" : "iJo0s4EB3yshHdeex_53",
+        "_score" : 1.0,
+        "_source" : {
+          "type" : "rsyslog",
+          "procid" : "-",
+          "programname" : "sshd",
+          "severity" : "info",
+          "sysloghost" : "ubuntu-srv3",
+          "@version" : "1",
+          "host" : {
+            "ip" : "127.0.0.1"
+          },
+          "facility" : "local6",
+          "event" : {
+            "original" : "{\"@timestamp\":\"2022-06-30T01:37:24+03:00\",\"@version\":\"1\",\"message\":\" Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session closed for user root\",\"sysloghost\":\"ubuntu-srv3\",\"severity\":\"info\",\"facility\":\"local6\",\"programname\":\"sshd\",\"procid\":\"-\"}\n"
+          },
+          "message" : " Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session closed for user root",
+          "@timestamp" : "2022-06-29T22:37:24Z",
+          "data_stream" : {
+            "type" : "logs",
+            "dataset" : "generic",
+            "namespace" : "default"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-logs-generic-default-2022.06.29-000001",
+        "_id" : "iZo0s4EB3yshHdeex_53",
+        "_score" : 1.0,
+        "_source" : {
+          "type" : "rsyslog",
+          "procid" : "-",
+          "programname" : "sshd",
+          "severity" : "info",
+          "sysloghost" : "ubuntu-srv3",
+          "@version" : "1",
+          "host" : {
+            "ip" : "127.0.0.1"
+          },
+          "facility" : "local6",
+          "event" : {
+            "original" : "{\"@timestamp\":\"2022-06-30T01:37:24+03:00\",\"@version\":\"1\",\"message\":\" Jun 29 00:14:07 ubuntu-srv3 sudo: pam_unix(sudo:session): session closed for user root\",\"sysloghost\":\"ubuntu-srv3\",\"severity\":\"info\",\"facility\":\"local6\",\"programname\":\"sshd\",\"procid\":\"-\"}\n"
+          },
+          "message" : " Jun 29 00:14:07 ubuntu-srv3 sudo: pam_unix(sudo:session): session closed for user root",
+          "@timestamp" : "2022-06-29T22:37:24Z",
+          "data_stream" : {
+            "type" : "logs",
+            "dataset" : "generic",
+            "namespace" : "default"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-logs-generic-default-2022.06.29-000001",
+        "_id" : "qJo0s4EB3yshHdeex_1q",
+        "_score" : 1.0,
+        "_source" : {
+          "type" : "rsyslog",
+          "procid" : "-",
+          "programname" : "sshd",
+          "severity" : "info",
+          "sysloghost" : "ubuntu-srv3",
+          "@version" : "1",
+          "host" : {
+            "ip" : "127.0.0.1"
+          },
+          "facility" : "local6",
+          "event" : {
+            "original" : "{\"@timestamp\":\"2022-06-30T01:37:24+03:00\",\"@version\":\"1\",\"message\":\" Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)\",\"sysloghost\":\"ubuntu-srv3\",\"severity\":\"info\",\"facility\":\"local6\",\"programname\":\"sshd\",\"procid\":\"-\"}\n"
+          },
+          "message" : " Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)",
+          "@timestamp" : "2022-06-29T22:37:24Z",
+          "data_stream" : {
+            "type" : "logs",
+            "dataset" : "generic",
+            "namespace" : "default"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-logs-generic-default-2022.06.29-000001",
+        "_id" : "G5o0s4EB3yshHdeex_51",
+        "_score" : 1.0,
+        "_source" : {
+          "type" : "rsyslog",
+          "procid" : "-",
+          "programname" : "sshd",
+          "severity" : "info",
+          "sysloghost" : "ubuntu-srv3",
+          "@version" : "1",
+          "host" : {
+            "ip" : "127.0.0.1"
+          },
+          "facility" : "local6",
+          "event" : {
+            "original" : "{\"@timestamp\":\"2022-06-30T01:37:24+03:00\",\"@version\":\"1\",\"message\":\" Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)\",\"sysloghost\":\"ubuntu-srv3\",\"severity\":\"info\",\"facility\":\"local6\",\"programname\":\"sshd\",\"procid\":\"-\"}\n"
+          },
+          "message" : " Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)",
+          "@timestamp" : "2022-06-29T22:37:24Z",
+          "data_stream" : {
+            "type" : "logs",
+            "dataset" : "generic",
+            "namespace" : "default"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-logs-generic-default-2022.06.29-000001",
+        "_id" : "2Jo0s4EB3yshHdeex_1q",
+        "_score" : 1.0,
+        "_source" : {
+          "type" : "rsyslog",
+          "procid" : "-",
+          "programname" : "sshd",
+          "severity" : "info",
+          "sysloghost" : "ubuntu-srv3",
+          "@version" : "1",
+          "host" : {
+            "ip" : "127.0.0.1"
+          },
+          "facility" : "local6",
+          "event" : {
+            "original" : "{\"@timestamp\":\"2022-06-30T01:37:24+03:00\",\"@version\":\"1\",\"message\":\" Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session closed for user root\",\"sysloghost\":\"ubuntu-srv3\",\"severity\":\"info\",\"facility\":\"local6\",\"programname\":\"sshd\",\"procid\":\"-\"}\n"
+          },
+          "message" : " Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session closed for user root",
+          "@timestamp" : "2022-06-29T22:37:24Z",
+          "data_stream" : {
+            "type" : "logs",
+            "dataset" : "generic",
+            "namespace" : "default"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-logs-generic-default-2022.06.29-000001",
+        "_id" : "6Jo0s4EB3yshHdeex_1q",
+        "_score" : 1.0,
+        "_source" : {
+          "type" : "rsyslog",
+          "procid" : "-",
+          "programname" : "sshd",
+          "severity" : "info",
+          "sysloghost" : "ubuntu-srv3",
+          "@version" : "1",
+          "host" : {
+            "ip" : "127.0.0.1"
+          },
+          "facility" : "local6",
+          "event" : {
+            "original" : "{\"@timestamp\":\"2022-06-30T01:37:24+03:00\",\"@version\":\"1\",\"message\":\" Jun 29 00:14:19 ubuntu-srv3 sudo:     root : TTY=pts\\/1 ; PWD=\\/etc\\/rsyslog.d ; USER=root ; COMMAND=\\/usr\\/sbin\\/rsyslogd -N1\",\"sysloghost\":\"ubuntu-srv3\",\"severity\":\"info\",\"facility\":\"local6\",\"programname\":\"sshd\",\"procid\":\"-\"}\n"
+          },
+          "message" : " Jun 29 00:14:19 ubuntu-srv3 sudo:     root : TTY=pts/1 ; PWD=/etc/rsyslog.d ; USER=root ; COMMAND=/usr/sbin/rsyslogd -N1",
+          "@timestamp" : "2022-06-29T22:37:24Z",
+          "data_stream" : {
+            "type" : "logs",
+            "dataset" : "generic",
+            "namespace" : "default"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-logs-generic-default-2022.06.29-000001",
+        "_id" : "6po0s4EB3yshHdeex_1q",
+        "_score" : 1.0,
+        "_source" : {
+          "type" : "rsyslog",
+          "procid" : "-",
+          "programname" : "sshd",
+          "severity" : "info",
+          "sysloghost" : "ubuntu-srv3",
+          "@version" : "1",
+          "host" : {
+            "ip" : "127.0.0.1"
+          },
+          "facility" : "local6",
+          "event" : {
+            "original" : "{\"@timestamp\":\"2022-06-30T01:37:24+03:00\",\"@version\":\"1\",\"message\":\" Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)\",\"sysloghost\":\"ubuntu-srv3\",\"severity\":\"info\",\"facility\":\"local6\",\"programname\":\"sshd\",\"procid\":\"-\"}\n"
+          },
+          "message" : " Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)",
+          "@timestamp" : "2022-06-29T22:37:24Z",
+          "data_stream" : {
+            "type" : "logs",
+            "dataset" : "generic",
+            "namespace" : "default"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-logs-generic-default-2022.06.29-000001",
+        "_id" : "Q5o0s4EB3yshHdeex_51",
+        "_score" : 1.0,
+        "_source" : {
+          "type" : "rsyslog",
+          "procid" : "-",
+          "programname" : "sshd",
+          "severity" : "info",
+          "sysloghost" : "ubuntu-srv3",
+          "@version" : "1",
+          "host" : {
+            "ip" : "127.0.0.1"
+          },
+          "facility" : "local6",
+          "event" : {
+            "original" : "{\"@timestamp\":\"2022-06-30T01:37:24+03:00\",\"@version\":\"1\",\"message\":\" Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session closed for user root\",\"sysloghost\":\"ubuntu-srv3\",\"severity\":\"info\",\"facility\":\"local6\",\"programname\":\"sshd\",\"procid\":\"-\"}\n"
+          },
+          "message" : " Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session closed for user root",
+          "@timestamp" : "2022-06-29T22:37:24Z",
+          "data_stream" : {
+            "type" : "logs",
+            "dataset" : "generic",
+            "namespace" : "default"
+          }
+        }
+      }
+    ]
+  }
+}
+root@ubuntu-srv3:/var/log/kibana# curl -XGET 'http://localhost:9200/_all/_search?q=*&pretty'
+{
+  "took" : 2,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 1,
+    "successful" : 1,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : {
+      "value" : 10000,
+      "relation" : "gte"
+    },
+    "max_score" : 1.0,
+    "hits" : [
+      {
+        "_index" : ".ds-logs-generic-default-2022.06.29-000001",
+        "_id" : "8Zo0s4EB3yshHdeex_53",
+        "_score" : 1.0,
+        "_source" : {
+          "type" : "rsyslog",
+          "procid" : "-",
+          "programname" : "sshd",
+          "severity" : "info",
+          "sysloghost" : "ubuntu-srv3",
+          "@version" : "1",
+          "host" : {
+            "ip" : "127.0.0.1"
+          },
+          "facility" : "local6",
+          "event" : {
+            "original" : "{\"@timestamp\":\"2022-06-30T01:37:24+03:00\",\"@version\":\"1\",\"message\":\" Jun 29 00:14:19 ubuntu-srv3 sudo:     root : TTY=pts\\/1 ; PWD=\\/etc\\/rsyslog.d ; USER=root ; COMMAND=\\/usr\\/sbin\\/rsyslogd -N1\",\"sysloghost\":\"ubuntu-srv3\",\"severity\":\"info\",\"facility\":\"local6\",\"programname\":\"sshd\",\"procid\":\"-\"}\n"
+          },
+          "message" : " Jun 29 00:14:19 ubuntu-srv3 sudo:     root : TTY=pts/1 ; PWD=/etc/rsyslog.d ; USER=root ; COMMAND=/usr/sbin/rsyslogd -N1",
+          "@timestamp" : "2022-06-29T22:37:24Z",
+          "data_stream" : {
+            "type" : "logs",
+            "dataset" : "generic",
+            "namespace" : "default"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-logs-generic-default-2022.06.29-000001",
+        "_id" : "gZo0s4EB3yshHdeex_53",
+        "_score" : 1.0,
+        "_source" : {
+          "type" : "rsyslog",
+          "procid" : "-",
+          "programname" : "sshd",
+          "severity" : "info",
+          "sysloghost" : "ubuntu-srv3",
+          "@version" : "1",
+          "host" : {
+            "ip" : "127.0.0.1"
+          },
+          "facility" : "local6",
+          "event" : {
+            "original" : "{\"@timestamp\":\"2022-06-30T01:37:24+03:00\",\"@version\":\"1\",\"message\":\" Jun 29 00:14:19 ubuntu-srv3 sudo:     root : TTY=pts\\/1 ; PWD=\\/etc\\/rsyslog.d ; USER=root ; COMMAND=\\/usr\\/sbin\\/rsyslogd -N1\",\"sysloghost\":\"ubuntu-srv3\",\"severity\":\"info\",\"facility\":\"local6\",\"programname\":\"sshd\",\"procid\":\"-\"}\n"
+          },
+          "message" : " Jun 29 00:14:19 ubuntu-srv3 sudo:     root : TTY=pts/1 ; PWD=/etc/rsyslog.d ; USER=root ; COMMAND=/usr/sbin/rsyslogd -N1",
+          "@timestamp" : "2022-06-29T22:37:24Z",
+          "data_stream" : {
+            "type" : "logs",
+            "dataset" : "generic",
+            "namespace" : "default"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-logs-generic-default-2022.06.29-000001",
+        "_id" : "iJo0s4EB3yshHdeex_53",
+        "_score" : 1.0,
+        "_source" : {
+          "type" : "rsyslog",
+          "procid" : "-",
+          "programname" : "sshd",
+          "severity" : "info",
+          "sysloghost" : "ubuntu-srv3",
+          "@version" : "1",
+          "host" : {
+            "ip" : "127.0.0.1"
+          },
+          "facility" : "local6",
+          "event" : {
+            "original" : "{\"@timestamp\":\"2022-06-30T01:37:24+03:00\",\"@version\":\"1\",\"message\":\" Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session closed for user root\",\"sysloghost\":\"ubuntu-srv3\",\"severity\":\"info\",\"facility\":\"local6\",\"programname\":\"sshd\",\"procid\":\"-\"}\n"
+          },
+          "message" : " Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session closed for user root",
+          "@timestamp" : "2022-06-29T22:37:24Z",
+          "data_stream" : {
+            "type" : "logs",
+            "dataset" : "generic",
+            "namespace" : "default"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-logs-generic-default-2022.06.29-000001",
+        "_id" : "iZo0s4EB3yshHdeex_53",
+        "_score" : 1.0,
+        "_source" : {
+          "type" : "rsyslog",
+          "procid" : "-",
+          "programname" : "sshd",
+          "severity" : "info",
+          "sysloghost" : "ubuntu-srv3",
+          "@version" : "1",
+          "host" : {
+            "ip" : "127.0.0.1"
+          },
+          "facility" : "local6",
+          "event" : {
+            "original" : "{\"@timestamp\":\"2022-06-30T01:37:24+03:00\",\"@version\":\"1\",\"message\":\" Jun 29 00:14:07 ubuntu-srv3 sudo: pam_unix(sudo:session): session closed for user root\",\"sysloghost\":\"ubuntu-srv3\",\"severity\":\"info\",\"facility\":\"local6\",\"programname\":\"sshd\",\"procid\":\"-\"}\n"
+          },
+          "message" : " Jun 29 00:14:07 ubuntu-srv3 sudo: pam_unix(sudo:session): session closed for user root",
+          "@timestamp" : "2022-06-29T22:37:24Z",
+          "data_stream" : {
+            "type" : "logs",
+            "dataset" : "generic",
+            "namespace" : "default"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-logs-generic-default-2022.06.29-000001",
+        "_id" : "qJo0s4EB3yshHdeex_1q",
+        "_score" : 1.0,
+        "_source" : {
+          "type" : "rsyslog",
+          "procid" : "-",
+          "programname" : "sshd",
+          "severity" : "info",
+          "sysloghost" : "ubuntu-srv3",
+          "@version" : "1",
+          "host" : {
+            "ip" : "127.0.0.1"
+          },
+          "facility" : "local6",
+          "event" : {
+            "original" : "{\"@timestamp\":\"2022-06-30T01:37:24+03:00\",\"@version\":\"1\",\"message\":\" Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)\",\"sysloghost\":\"ubuntu-srv3\",\"severity\":\"info\",\"facility\":\"local6\",\"programname\":\"sshd\",\"procid\":\"-\"}\n"
+          },
+          "message" : " Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)",
+          "@timestamp" : "2022-06-29T22:37:24Z",
+          "data_stream" : {
+            "type" : "logs",
+            "dataset" : "generic",
+            "namespace" : "default"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-logs-generic-default-2022.06.29-000001",
+        "_id" : "G5o0s4EB3yshHdeex_51",
+        "_score" : 1.0,
+        "_source" : {
+          "type" : "rsyslog",
+          "procid" : "-",
+          "programname" : "sshd",
+          "severity" : "info",
+          "sysloghost" : "ubuntu-srv3",
+          "@version" : "1",
+          "host" : {
+            "ip" : "127.0.0.1"
+          },
+          "facility" : "local6",
+          "event" : {
+            "original" : "{\"@timestamp\":\"2022-06-30T01:37:24+03:00\",\"@version\":\"1\",\"message\":\" Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)\",\"sysloghost\":\"ubuntu-srv3\",\"severity\":\"info\",\"facility\":\"local6\",\"programname\":\"sshd\",\"procid\":\"-\"}\n"
+          },
+          "message" : " Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)",
+          "@timestamp" : "2022-06-29T22:37:24Z",
+          "data_stream" : {
+            "type" : "logs",
+            "dataset" : "generic",
+            "namespace" : "default"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-logs-generic-default-2022.06.29-000001",
+        "_id" : "2Jo0s4EB3yshHdeex_1q",
+        "_score" : 1.0,
+        "_source" : {
+          "type" : "rsyslog",
+          "procid" : "-",
+          "programname" : "sshd",
+          "severity" : "info",
+          "sysloghost" : "ubuntu-srv3",
+          "@version" : "1",
+          "host" : {
+            "ip" : "127.0.0.1"
+          },
+          "facility" : "local6",
+          "event" : {
+            "original" : "{\"@timestamp\":\"2022-06-30T01:37:24+03:00\",\"@version\":\"1\",\"message\":\" Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session closed for user root\",\"sysloghost\":\"ubuntu-srv3\",\"severity\":\"info\",\"facility\":\"local6\",\"programname\":\"sshd\",\"procid\":\"-\"}\n"
+          },
+          "message" : " Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session closed for user root",
+          "@timestamp" : "2022-06-29T22:37:24Z",
+          "data_stream" : {
+            "type" : "logs",
+            "dataset" : "generic",
+            "namespace" : "default"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-logs-generic-default-2022.06.29-000001",
+        "_id" : "6Jo0s4EB3yshHdeex_1q",
+        "_score" : 1.0,
+        "_source" : {
+          "type" : "rsyslog",
+          "procid" : "-",
+          "programname" : "sshd",
+          "severity" : "info",
+          "sysloghost" : "ubuntu-srv3",
+          "@version" : "1",
+          "host" : {
+            "ip" : "127.0.0.1"
+          },
+          "facility" : "local6",
+          "event" : {
+            "original" : "{\"@timestamp\":\"2022-06-30T01:37:24+03:00\",\"@version\":\"1\",\"message\":\" Jun 29 00:14:19 ubuntu-srv3 sudo:     root : TTY=pts\\/1 ; PWD=\\/etc\\/rsyslog.d ; USER=root ; COMMAND=\\/usr\\/sbin\\/rsyslogd -N1\",\"sysloghost\":\"ubuntu-srv3\",\"severity\":\"info\",\"facility\":\"local6\",\"programname\":\"sshd\",\"procid\":\"-\"}\n"
+          },
+          "message" : " Jun 29 00:14:19 ubuntu-srv3 sudo:     root : TTY=pts/1 ; PWD=/etc/rsyslog.d ; USER=root ; COMMAND=/usr/sbin/rsyslogd -N1",
+          "@timestamp" : "2022-06-29T22:37:24Z",
+          "data_stream" : {
+            "type" : "logs",
+            "dataset" : "generic",
+            "namespace" : "default"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-logs-generic-default-2022.06.29-000001",
+        "_id" : "6po0s4EB3yshHdeex_1q",
+        "_score" : 1.0,
+        "_source" : {
+          "type" : "rsyslog",
+          "procid" : "-",
+          "programname" : "sshd",
+          "severity" : "info",
+          "sysloghost" : "ubuntu-srv3",
+          "@version" : "1",
+          "host" : {
+            "ip" : "127.0.0.1"
+          },
+          "facility" : "local6",
+          "event" : {
+            "original" : "{\"@timestamp\":\"2022-06-30T01:37:24+03:00\",\"@version\":\"1\",\"message\":\" Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)\",\"sysloghost\":\"ubuntu-srv3\",\"severity\":\"info\",\"facility\":\"local6\",\"programname\":\"sshd\",\"procid\":\"-\"}\n"
+          },
+          "message" : " Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)",
+          "@timestamp" : "2022-06-29T22:37:24Z",
+          "data_stream" : {
+            "type" : "logs",
+            "dataset" : "generic",
+            "namespace" : "default"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-logs-generic-default-2022.06.29-000001",
+        "_id" : "Q5o0s4EB3yshHdeex_51",
+        "_score" : 1.0,
+        "_source" : {
+          "type" : "rsyslog",
+          "procid" : "-",
+          "programname" : "sshd",
+          "severity" : "info",
+          "sysloghost" : "ubuntu-srv3",
+          "@version" : "1",
+          "host" : {
+            "ip" : "127.0.0.1"
+          },
+          "facility" : "local6",
+          "event" : {
+            "original" : "{\"@timestamp\":\"2022-06-30T01:37:24+03:00\",\"@version\":\"1\",\"message\":\" Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session closed for user root\",\"sysloghost\":\"ubuntu-srv3\",\"severity\":\"info\",\"facility\":\"local6\",\"programname\":\"sshd\",\"procid\":\"-\"}\n"
+          },
+          "message" : " Jun 29 00:14:19 ubuntu-srv3 sudo: pam_unix(sudo:session): session closed for user root",
+          "@timestamp" : "2022-06-29T22:37:24Z",
+          "data_stream" : {
+            "type" : "logs",
+            "dataset" : "generic",
+            "namespace" : "default"
+          }
+        }
+      }
+    ]
+  }
+}
